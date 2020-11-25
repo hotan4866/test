@@ -1,0 +1,40 @@
+sudo apt udate -y && apt upgrade -y
+
+sudo apt install apache2 -y
+
+sudo apt install php -y
+
+sudo apt install mysql-server -y
+
+apache2 -v
+php -v
+mymsql-server -v
+
+dpkg -l | grep apache
+dpkg -l | grep php
+dpkg -l | grep mymsql-server
+
+ps -ef | grep apache
+ps -ef | grep php
+ps -ef | grep mymsql-server
+
+cd /var/www/html/
+
+sudo vi index.php
+
+<?php phpinfo(); ?>
+
+:wq!
+
+//아파치 확인
+localhost
+//php 확인
+localhost/index.php
+
+sudo /usr/bin/mysql -u root -p
+
+show databases;
+//mysql 테이블 확인
+show tables;
+
+
