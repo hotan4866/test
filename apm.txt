@@ -10,13 +10,6 @@ apache2 -v
 php -v
 mymsql-server -v
 
-dpkg -l | grep apache
-dpkg -l | grep php
-dpkg -l | grep mymsql-server
-
-ps -ef | grep apache
-ps -ef | grep php
-ps -ef | grep mymsql-server
 
 cd /var/www/html/
 
